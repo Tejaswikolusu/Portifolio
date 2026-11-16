@@ -22,7 +22,7 @@ export const profile = {
   phone: '+91 94413 54646',
   links: {
     linkedin: 'https://linkedin.com/in/kolusu-tejaswi9999',
-    github: 'https://github.com/Tesigit',
+    github: 'https://github.com/Tejaswikolusu',
   },
   resumePdf: '/assets/Tejaswi_Kolusu_Resume.pdf',
   portrait: {
@@ -128,7 +128,7 @@ export const projects: Project[] = [
       { value: 'Gemini API', label: 'constraint-based GenAI engine' },
       { value: 'Fabric.js', label: 'interactive canvas rendering' },
     ],
-    github: 'https://github.com/Tesigit',
+    github: 'https://github.com/Tejaswikolusu',
     palette: { from: '#1a0624', via: '#5f1680', to: '#0b0612', accent: '#c084fc' },
     motif: 'flow',
   },
@@ -157,7 +157,7 @@ export const projects: Project[] = [
       { value: '30%', label: 'reduction in manual handling' },
       { value: 'Full-Stack', label: 'end-to-end shopping workflows' },
     ],
-    github: 'https://github.com/Tesigit',
+    github: 'https://github.com/Tejaswikolusu',
     palette: { from: '#021a14', via: '#095944', to: '#040d0a', accent: '#34d399' },
     motif: 'tenants',
   },
@@ -185,7 +185,7 @@ export const projects: Project[] = [
       { value: 'MQ9', label: 'calibrated gas sensor' },
       { value: '24/7', label: 'continuous environmental monitoring' },
     ],
-    github: 'https://github.com/Tesigit',
+    github: 'https://github.com/Tejaswikolusu',
     palette: { from: '#04121f', via: '#0f4c6e', to: '#05080d', accent: '#4cc9ff' },
     motif: 'shield',
   },
@@ -213,7 +213,7 @@ export const projects: Project[] = [
       { value: '20%', label: 'faster execution pipeline' },
       { value: 'ML', label: 'pattern recognition & modeling' },
     ],
-    github: 'https://github.com/Tesigit',
+    github: 'https://github.com/Tejaswikolusu',
     palette: { from: '#24060b', via: '#6e0d1d', to: '#09070a', accent: '#ff3d5a' },
     motif: 'flow',
   },
@@ -269,10 +269,10 @@ export const achievements: Achievement[] = [
 export type Certification = { issuer: string; name: string; link: string };
 
 export const certifications: Certification[] = [
-  { issuer: 'Infosys / ICT Academy', name: 'Java Software Developer Training – Infosys Foundation Finishing School (Grade A)', link: 'https://github.com/Tesigit' },
-  { issuer: 'NPTEL', name: 'Java Programming (Silver Medal)', link: 'https://github.com/Tesigit' },
-  { issuer: '1Stop', name: 'Artificial Intelligence & Full Stack Development', link: 'https://github.com/Tesigit' },
-  { issuer: 'Certifications', name: 'Python Programming Certified', link: 'https://github.com/Tesigit' },
+  { issuer: 'Infosys / ICT Academy', name: 'Java Software Developer Training – Infosys Foundation Finishing School (Grade A)', link: 'https://github.com/Tejaswikolusu' },
+  { issuer: 'NPTEL', name: 'Java Programming (Silver Medal)', link: 'https://github.com/Tejaswikolusu' },
+  { issuer: '1Stop', name: 'Artificial Intelligence & Full Stack Development', link: 'https://github.com/Tejaswikolusu' },
+  { issuer: 'Certifications', name: 'Python Programming Certified', link: 'https://github.com/Tejaswikolusu' },
 ];
 
 export type Skill = { name: string; mono: string; note?: string };
