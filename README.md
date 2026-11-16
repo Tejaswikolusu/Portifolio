@@ -1,99 +1,130 @@
 # TEJASWI — THE SERIES
 
-[![Live Demo](https://img.shields.io/badge/Live_Demo-Visit_Portfolio-e50914?style=for-the-badge&logo=netflix&logoColor=white)](https://tejaswikolusu.github.io/Portifolio/)
+[![Live Demo](https://img.shields.io/badge/Live_Demo-Visit_Portfolio-e50914?style=for-the-badge&logo=firefox&logoColor=white)](https://tejaswikolusu.github.io/Portifolio/)
+[![React](https://img.shields.io/badge/React_18-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://react.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript_5-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Vite](https://img.shields.io/badge/Vite_6-646CFF?style=for-the-badge&logo=vite&logoColor=FFD62E)](https://vitejs.dev/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS_4-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+[![Framer Motion](https://img.shields.io/badge/Framer_Motion-0055FF?style=for-the-badge&logo=framer&logoColor=white)](https://www.framer.com/motion/)
 
 > 🌐 **Live Website:** [https://tejaswikolusu.github.io/Portifolio/](https://tejaswikolusu.github.io/Portifolio/)
 
-A cinematic, streaming-inspired portfolio for **Tejaswi Kolusu**: Software Engineer & AI Engineer and B.Tech CSE Graduate.
-Every section is an episode, every project is an Original, and the whole site plays like a series.
+---
 
-> A personal portfolio with a fictional streaming-platform look. It is not affiliated with Netflix or any other streaming service and uses none of their logos.
+## 📽️ About the Project
 
-## Run it locally
+**Personally designed and developed by [Tejaswi Kolusu](https://github.com/Tejaswikolusu)** — Software Engineer & AI Engineer and B.Tech CSE Graduate from Gayatri Vidya Parishad College of Engineering.
 
-Requires **Node.js 18+**.
+**TEJASWI — THE SERIES** is a cinematic, streaming-platform-inspired portfolio web application. It reimagines the traditional developer portfolio into an interactive streaming experience:
+- Every career milestone is an **Episode**
+- Every major software project is an **Original**
+- Every skill is mapped to real-world code evidence and live certifications
+- The entire experience plays like an immersive episodic series
 
+---
+
+## ✨ Key Features & Architecture
+
+- **🎬 Cinematic Opening Sequence:** Studio titles, title card animation, and portrait reveal with sound and letterbox framing.
+- **👤 Multi-Perspective Viewer Profiles:** "Who's watching?" interface that re-orders the series based on who is viewing:
+  - **Recruiter:** Resume, achievements, and core skills first.
+  - **Developer:** Projects, technical stack, architecture, and GitHub repositories first.
+  - **Creative:** Journey, highlights, and story arc first.
+- **🚀 Featured Originals (Projects):**
+  - **GenAI Architectural Floor Plan Generator:** Built with Python, Gemini API prompt engineering, MongoDB, and interactive Fabric.js canvas rendering.
+  - **FloraHub E-Commerce Platform:** Full-stack shopping application with high-throughput REST APIs and database CRUD optimizations.
+  - **Freshify IoT Air Quality System:** Real-time smoke/gas detection with MQ9 sensor and automated purifier control logic.
+  - **Predictive Stock Price Modeling:** Python data preprocessing and machine learning forecasting pipeline.
+- **📄 Interactive Resume Sheet & PDF Viewer:** Built-in PDF reader with full-screen viewer and one-click download.
+- **🎖️ Verified Achievements & Honors:** Highlights NPTEL Java Programming Silver Medal, Infosys Foundation Finishing School Grade A, 1Stop AI/Full-Stack, and Python certifications.
+- **🌊 Ultra-Smooth 60 FPS Experience:** Lenis smooth scrolling, Framer Motion spring physics, custom interactive cursor, magnetic buttons, and 3D card tilt effects.
+
+---
+
+## 🛠️ Tech Stack
+
+| Layer | Technology |
+|---|---|
+| **Frontend Framework** | React 18, TypeScript |
+| **Build Tool & Bundler** | Vite 6 |
+| **Styling & Design System** | Tailwind CSS v4, Custom Design Tokens |
+| **Animations & Physics** | Framer Motion 11 |
+| **Smooth Scrolling** | Lenis Scroll |
+| **Icons & Media** | SVG, Sharp (High-Res Responsive WebP) |
+| **CI / CD Deployment** | GitHub Actions & GitHub Pages |
+
+---
+
+## 🚀 Running Locally
+
+### Prerequisites
+- **Node.js 18+** installed on your machine.
+- **npm** or any preferred package manager.
+
+### 1. Clone the repository
 ```bash
-npm install
-npm run dev
+git clone https://github.com/Tejaswikolusu/Portifolio.git
+cd Portifolio
 ```
 
-Open the URL Vite prints (usually http://localhost:5173).
+### 2. Install dependencies
+```bash
+npm install
+```
 
-Production build:
+### 3. Start development server
+```bash
+npm run dev
+```
+Open [http://localhost:5173/](http://localhost:5173/) in your browser.
 
+### 4. Build for production
 ```bash
 npm run build
 npm run preview
 ```
 
-The static site is written to `dist/` and can be deployed as-is to Vercel, Netlify, GitHub Pages or any static host.
+---
 
-## Updating the content
-
-**All content lives in one file: [`src/data/portfolio.ts`](src/data/portfolio.ts).** It was generated from the resume, and every component reads from it.
-
-| To change… | Edit |
-| --- | --- |
-| Name, intro, email, LinkedIn, GitHub | `profile` |
-| A project, or a new one | `projects` (add an object; it appears in Originals, the overlay, the resume sheet and the counts) |
-| Achievements / certifications | `achievements`, `certifications` |
-| Skills and their "where it's used" notes | `skillCategories`, `skillEvidence` |
-| Seasons and episodes (My Journey) | `seasons` |
-| Top 10 row | `topPicks` |
-| ▶ Play Intro highlight reel | `introSlides` |
-| Profile order (Recruiter / Developer / Creative) | `viewerProfiles` |
-| Opening studio card text | `profile.originalLabel` |
-
-**Resume:** replace `public/assets/Sushmita_Dasari_Resume.pdf`.
-
-**Photo:** replace `pic1.jpeg` (high-res photo) and `pic.png` (background-removed cutout with the same framing), then run:
-
-```bash
-npm run images
-```
-
-This rebuilds the responsive WebP portraits and the social share image in `public/assets/`.
-
-## What's inside
+## 📁 Repository Structure
 
 ```
-src/
-  data/portfolio.ts        ← single source of truth (from the resume)
-  App.tsx                  ← stages: opening → profile select → home; overlays
-  components/
-    OpeningSequence        ← black → studio card → SUSHMITA → THE SERIES → portrait → ▶ PLAY
-    ProfileSelector        ← "Who's watching?" (changes section order only)
-    Navbar                 ← hide-on-scroll nav, profile switcher, mobile menu
-    Hero                   ← billboard: parallax portrait, particles, light streaks, floating chips
-    PlayIntro              ← ▶ Play Intro: zoom into portrait → highlight reel (pause, ← →, tap zones)
-    ContinueWatching       ← cards with real "watched" progress bars
-    About                  ← The Pilot
-    Seasons / EpisodeCard  ← My Journey as seasons and episodes
-    Originals / ProjectCard← pinned horizontal sequence on desktop, swipe rail on touch
-    ProjectModal           ← full-screen project overlay with a shared-element transition
-    TopPicks               ← Top 10-style row
-    Skills                 ← skill genres; each card shows where the skill appears
-    Achievements           ← award-poster cards + certification rail (links to credentials)
-    ResumeViewer/ResumeModal ← designed resume sheet, PDF viewer, download
-    FinalCTA               ← TO BE CONTINUED… + contact links
-    CustomCursor, fx.tsx   ← cursor states, magnetic buttons, 3D tilt, text reveals, particles
-  hooks/                   ← Lenis smooth scroll + scroll lock, media queries, watch progress
-scripts/build-images.mjs   ← portrait/share-image pipeline (sharp)
+├── public/                 # Static assets (Resume PDF, icons, images)
+│   └── assets/             # High-res portraits, PDF resume, social share card
+├── src/
+│   ├── components/         # Modular React components
+│   │   ├── OpeningSequence.tsx  # Cinematic title card sequence
+│   │   ├── ProfileSelector.tsx  # "Who's watching?" profile picker
+│   │   ├── Hero.tsx             # Billboard hero with parallax & ambient light
+│   │   ├── PlayIntro.tsx        # Highlight reel story overlay
+│   │   ├── About.tsx            # Starring poster card & background
+│   │   ├── Seasons.tsx          # Educational & career timeline episodes
+│   │   ├── Originals.tsx        # Featured software projects
+│   │   ├── TopPicks.tsx         # Top 10 career highlights
+│   │   ├── Skills.tsx           # Skills matrix with evidence cross-references
+│   │   ├── Achievements.tsx     # Certifications & honors
+│   │   └── ResumeViewer.tsx     # In-browser resume sheet & download
+│   ├── data/
+│   │   └── portfolio.ts    # Centralized portfolio data & resume schema
+│   ├── hooks/              # Custom React hooks (smooth scroll, media queries)
+│   ├── App.tsx             # Main application orchestrator
+│   └── main.tsx            # Application entrypoint
+├── vite.config.ts          # Vite & Tailwind configuration
+└── package.json            # Project dependencies & build scripts
 ```
 
-**Stack:** React 18, TypeScript, Vite 6, Tailwind CSS 4, Framer Motion 11, Lenis.
+---
 
-## Accessibility and performance
+## 🌐 Live Deployment
 
-- `prefers-reduced-motion` is respected: smooth scroll, the custom cursor, tilt, particles, grain and the pinned horizontal scroll turn off, and the opening jumps straight to its final frame.
-- Hover effects only run on devices with a precise pointer. Touch devices get tap interactions and native swipe rails.
-- The custom cursor appears only with a mouse or trackpad.
-- Overlays close with Esc, and the highlight reel supports Space and the ← → keys.
-- Portraits are responsive WebP files (25–90 KB). Overlays are code-split, and particles pause when they're off screen.
+The website is continuously deployed on **GitHub Pages**:
+👉 **[https://tejaswikolusu.github.io/Portifolio/](https://tejaswikolusu.github.io/Portifolio/)**
 
-## Keyboard shortcuts
+---
 
-- **Opening:** Enter or Esc skips it.
-- **Play Intro:** Space pauses, ← and → change slides, Esc closes.
-- **Project and resume overlays:** Esc closes.
+## 📬 Connect with Me
+
+- **Developer:** Tejaswi Kolusu
+- **Email:** [kolusutejaswi99@gmail.com](mailto:kolusutejaswi99@gmail.com)
+- **LinkedIn:** [linkedin.com/in/kolusu-tejaswi9999](https://linkedin.com/in/kolusu-tejaswi9999)
+- **GitHub:** [github.com/Tejaswikolusu](https://github.com/Tejaswikolusu)
