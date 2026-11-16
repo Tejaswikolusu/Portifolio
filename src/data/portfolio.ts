@@ -6,6 +6,8 @@
 
 export type Palette = { from: string; via: string; to: string; accent: string };
 
+const base = (import.meta.env.BASE_URL || '/').replace(/\/$/, '');
+
 export const profile = {
   fullName: 'Tejaswi Kolusu',
   displayName: 'Tejaswi Kolusu',
@@ -24,10 +26,10 @@ export const profile = {
     linkedin: 'https://linkedin.com/in/kolusu-tejaswi9999',
     github: 'https://github.com/Tejaswikolusu',
   },
-  resumePdf: '/assets/Tejaswi_Kolusu_Resume.pdf',
+  resumePdf: `${base}/assets/Tejaswi_Kolusu_Resume.pdf`,
   portrait: {
-    src: '/assets/portrait-720.webp',
-    srcSet: '/assets/portrait-420.webp 420w, /assets/portrait-720.webp 720w, /assets/portrait-1100.webp 1100w',
+    src: `${base}/assets/portrait-720.webp`,
+    srcSet: `${base}/assets/portrait-420.webp 420w, ${base}/assets/portrait-720.webp 720w, ${base}/assets/portrait-1100.webp 1100w`,
     alt: 'Portrait of Tejaswi Kolusu',
   },
   interests: ['Backend Systems', 'Generative AI & LLMs', 'ML Pipeline Optimization'],

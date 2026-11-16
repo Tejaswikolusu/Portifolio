@@ -7,9 +7,10 @@ export function ProfileAvatar({ id, size = 'lg' }: { id: ProfileId; size?: 'sm' 
   const p = viewerProfiles.find((v) => v.id === id)!;
   const box = size === 'lg' ? 'h-24 w-24 sm:h-32 sm:w-32 md:h-36 md:w-36 rounded-xl' : 'h-8 w-8 rounded-md';
   if (id === 'tejaswi') {
+    const base = (import.meta.env.BASE_URL || '/').replace(/\/$/, '');
     return (
       <span className={`relative block overflow-hidden ${box}`} style={{ background: 'radial-gradient(circle at 50% 30%, #7a0f24, #1a0509)' }}>
-        <img src="/assets/portrait-420.webp" alt="" className="h-full w-full object-cover object-center" />
+        <img src={`${base}/assets/portrait-420.webp`} alt="" className="h-full w-full object-cover object-center" />
       </span>
     );
   }
