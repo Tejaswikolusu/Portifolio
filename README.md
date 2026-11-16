@@ -1,6 +1,10 @@
 # TEJASWI — THE SERIES
 
-A cinematic, streaming-inspired portfolio for **Tejaswi Kolusu**: Software Developer and B.Tech CSE Graduate.
+[![Live Demo](https://img.shields.io/badge/Live_Demo-Visit_Portfolio-e50914?style=for-the-badge&logo=netflix&logoColor=white)](https://tejaswikolusu.github.io/Portifolio/)
+
+> 🌐 **Live Website:** [https://tejaswikolusu.github.io/Portifolio/](https://tejaswikolusu.github.io/Portifolio/)
+
+A cinematic, streaming-inspired portfolio for **Tejaswi Kolusu**: Software Engineer & AI Engineer and B.Tech CSE Graduate.
 Every section is an episode, every project is an Original, and the whole site plays like a series.
 
 > A personal portfolio with a fictional streaming-platform look. It is not affiliated with Netflix or any other streaming service and uses none of their logos.
